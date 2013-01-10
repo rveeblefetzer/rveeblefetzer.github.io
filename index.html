@@ -28,36 +28,30 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
       <h1>GitHub Pages Import</h1>
-<p>As part of gunicorn_, me and <code>Benoit Chesneau</code><em> have been starting to look at
-how to host documentation. There's the obvious method of using GitHub</em>'s
-post-update hooks to trigger doc builds and rsync to a webserver, but we ended
-up wanting to try out github's hosting to make the whole interface a bit more
-robust.</p>
-<p><code>GitHub Pages</code><em> is a pretty awesome service that GitHub provides for hosting
-project documentation. The only thing is that it requires a <code>gh-pages</code> branch
-that is the site's document root. This means that keeping documentation sources
-in the branch with code is a bit difficult. And it really turns into a head
-scratcher for things like Sphinx</em> that want to access documentation sources and
-code sources at the same time.</p>
-<p>Then I stumbled across an interesting looking package called <code>github-tools</code>_
-that looked almost like what I wanted. It was a tad complicated and more
-involved than I wanted but it gave me an idear. Why not just write a script that
-can copy a directory to the <code>gh-pages</code> branch of the repository. This saves me
-from even having to think about the branch and everything becomes magical.</p>
+<p>As part of <a href="gunicorn">gunicorn</a>, me and <a href="benoit">Benoit Chesneau</a> have been
+starting to look at how to host documentation. There's the obvious method of
+using <a href="https://help.github.com/articles/post-receive-hooks" title="GitHub Post-Receive Hook">GitHub's post-receive hook</a> to trigger doc builds and rsync
+to a webserver, but we ended up wanting to try out github's hosting to make the
+whole interface a bit more robust.</p>
+<p><a href="gh-pages">GitHub Pages</a> is a pretty awesome service that GitHub provides for
+hosting project documentation. The only thing is that it requires a
+<code>gh-pages</code> branch that is the site's document root. This means that keeping
+documentation sources in the branch with code is a bit difficult. And it really
+turns into a head scratcher for things like <a href="sphinx">Sphinx</a> that want to
+access documentation sources and code sources at the same time.</p>
+<p>Then I stumbled across an interesting looking package called
+<a href="github-tools">github-tools</a> that looked almost like what I wanted. It was a tad
+complicated and more involved than I wanted but it gave me an idear. Why not
+just write a script that can copy a directory to the <code>gh-pages</code> branch of the
+repository. This saves me from even having to think about the branch and
+everything becomes magical.</p>
 <p>This is what <code>ghp-import</code> was written for.</p>
-<p>.. <em>gunicorn: http://www.gunicorn.com/
-.. </em><code>Benoit Chesneau</code>: http://github.com/benoitc
-.. <em>GitHub: http://github.com/
-.. </em><code>GitHub Pages</code>: http://pages.github.com/
-.. <em>Sphinx: http://sphinx.pocoo.org/
-.. </em><code>github-tools</code>: http://dinoboff.github.com/github-tools/</p>
 <h2>Big Fat Warning</h2>
-<p>This will <strong>DESTROY</strong> your gh-pages branch. If you love it, you'll want to take
-backups before playing with this. This script assumes that gh-pages is 100%
-derivative. You should never edit files in your gh-pages branch by hand if
-you're using this script because you will lose your work.</p>
+<p>This will <strong>DESTROY</strong> your <code>gh-pages</code> branch. If you love it, you'll want to
+take backups before playing with this. This script assumes that <code>gh-pages</code> is
+100% derivative. You should never edit files in your <code>gh-pages</code> branch by hand
+if you're using this script because you will lose your work.</p>
 <h2>Usage</h2>
-<p>::</p>
 <pre><code>Usage: ghp-import [OPTIONS] DIRECTORY
 
 Options:
@@ -68,7 +62,7 @@ Options:
   -h, --help  show this help message and exit
 </code></pre>
 <p>Its pretty simple. Inside your repository just run <code>ghp-import $DOCS_DIR</code>
-where <code>$DOCS_DIR</code> is the path to the <em>built</em> documentation. This will write a
+where <code>$DOCS_DIR</code> is the path to the <strong>built</strong> documentation. This will write a
 commit to your <code>gh-pages</code> branch with the current documents in it.</p>
 <p>If you specify <code>-p</code> it will also attempt to push the <code>gh-pages</code> branch to
 GitHub. By default it'll just run <code>git push origin gh-pages</code>. You can specify
@@ -76,7 +70,7 @@ a different remote using the <code>-r</code> flag.</p>
 <p>You can specify a different branch with <code>-b</code>. This is useful for user and
 organization page, which are served from the <code>master</code> branch.</p>
 <h2>License</h2>
-<p>ghp-import is distributed under the Tumbolia Public License. See the LICENSE
+<p><code>ghp-import</code> is distributed under the Tumbolia Public License. See the LICENSE
 file for more information.</p>
       </section>
     </div>
