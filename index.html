@@ -28,19 +28,19 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
       <h1>GitHub Pages Import</h1>
-<p>As part of <a href="gunicorn">gunicorn</a>, <a href="benoit">Benoit Chesneau</a> and I have been
+<p>As part of <a href="http://www.gunicorn.com/" title="Gunicorn">gunicorn</a>, <a href="http://github.com/benoitc" title="Benoît Chesneau">Benoit Chesneau</a> and I have been
 starting to look at how to host documentation. There's the obvious method of
 using <a href="https://help.github.com/articles/post-receive-hooks" title="GitHub Post-Receive Hook">GitHub's post-receive hook</a> to trigger doc builds and rsync
 to a webserver, but we ended up wanting to try out github's hosting to make the
 whole interface a bit more robust.</p>
-<p><a href="gh-pages">GitHub Pages</a> is a pretty awesome service that GitHub provides for
+<p>[GitHub Pages][gh-pages] is a pretty awesome service that GitHub provides for
 hosting project documentation. The only thing is that it requires a
 <code>gh-pages</code> branch that is the site's document root. This means that keeping
 documentation sources in the branch with code is a bit difficult. And it really
-turns into a head scratcher for things like <a href="sphinx">Sphinx</a> that want to
+turns into a head scratcher for things like <a href="http://sphinx.pocoo.org/" title="Sphinx Documentation">Sphinx</a> that want to
 access documentation sources and code sources at the same time.</p>
 <p>Then I stumbled across an interesting looking package called
-<a href="github-tools">github-tools</a> that looked almost like what I wanted. It was a tad
+<a href="http://dinoboff.github.com/github-tools/" title="github-tools">github-tools</a> that looked almost like what I wanted. It was a tad
 complicated and more involved than I wanted but it gave me an idear. Why not
 just write a script that can copy a directory to the <code>gh-pages</code> branch of the
 repository. This saves me from even having to think about the branch and
