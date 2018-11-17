@@ -1,0 +1,24 @@
+body {
+.emoji {
+  font-family: Emojione, Noto, Twemoji, Symbola;
+}
+@font-face { /* http://emojione.com/developers/ */
+  font-family: Emojione;
+  src: local("EmojiOne BW"), local("EmojiOne"), local("Emoji One"), 
+       /*   https://cdn.rawgit.com/Ranks/emojione/master/assets/fonts/emojione-bw.otf – monochrome only, deprecated, removed
+            https://cdn.rawgit.com/Ranks/emojione/master/assets/fonts/emojione-android.ttf – with hack
+            https://cdn.rawgit.com/Ranks/emojione/master/assets/fonts/emojione-apple.ttf – with hack */
+       url("https://cdn.rawgit.com/Ranks/emojione/master/assets/fonts/emojione-svg.woff2") format("woff2"),
+       url("https://cdn.rawgit.com/Ranks/emojione/master/assets/fonts/emojione-svg.woff") format("woff"),
+       url("https://cdn.rawgit.com/Ranks/emojione/master/assets/fonts/emojione-svg.otf") format("truetype");
+}
+@font-face { /* https://www.google.com/get/noto/#noto-emoji-zsye */
+  font-family: Noto;
+  src: local("Noto Emoji"), local("Noto Color Emoji"), local("Noto"), 
+       url("https://cdn.rawgit.com/googlei18n/noto-emoji/master/fonts/NotoEmoji-Regular.ttf");
+}
+@font-face { /* https://github.com/eosrei/twemoji-color-font/releases */
+  font-family: Twemoji;
+  src: local("Twemoji");
+}
+}

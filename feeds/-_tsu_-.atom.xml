@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Text, Editor - ¯\_(ツ)_/¯</title><link href="https://rveeblfetzer.github.io/" rel="alternate"></link><link href="https://rveeblfetzer.github.io/feeds/-_tsu_-.atom.xml" rel="self"></link><id>https://rveeblfetzer.github.io/</id><updated>2018-11-15T00:00:00+01:00</updated><entry><title>Reinitializing...</title><link href="https://rveeblfetzer.github.io/2018/11/15/reinitializing.html" rel="alternate"></link><published>2018-11-15T00:00:00+01:00</published><updated>2018-11-15T00:00:00+01:00</updated><author><name>Rick Valenzuela</name></author><id>tag:rveeblfetzer.github.io,2018-11-15:/2018/11/15/reinitializing.html</id><summary type="html">&lt;p&gt;Burn it down, start all over. I've hit this point so often, it's almost like my
+MO for learning a new thing. And it's not bad, either. Among the pluses are a
+cathartic release for frustrations over whatever snag I hit, the building of
+muscle memory for the parts I …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Burn it down, start all over. I've hit this point so often, it's almost like my
+MO for learning a new thing. And it's not bad, either. Among the pluses are a
+cathartic release for frustrations over whatever snag I hit, the building of
+muscle memory for the parts I didn't screw up, and a clean, fresh start.&lt;/p&gt;
+&lt;p&gt;I originally made this space on an old laptop I used to test drive Arch Linux.
+Sometime shortly after, I moved continents, and a lot got put on hold.
+Somewhere along the way, I lost a password manager file. Or maybe I didn't
+even; that install was more less a disposable lab, so the password could've
+been on paper, or just something simple I remembered. Whatever it was, it was
+gone. For the last couple weeks, I've booted and stared at that machine,
+eventually remembering the passphrase to decrypt the disk, only to get stumped
+at the login. In that laptop was the repo to this blog. The contents of the
+site were retrievable, on a remote repo on Github, but the config and templates
+were somewhere behind the greeter page.&lt;/p&gt;
+&lt;p&gt;For a change of pace, my project faced a controlled burn not because of
+technical error, but negligence. Luckily, Pelican is really easy to sort out,
+and I had opted for mostly prebuilt aesthetics. There wasn't anything to
+redesign, just pull the CSS from the site. So the optimistic me frames the
+experience as re-familiarizing myself with the Pelican config and Jinja2, and
+learning my lesson to better maintain and back up my password manager. And
+since that laptop didn't have much else on it, I can now burn down the install
+that's there and go through the Arch install process again.&lt;/p&gt;
+</content></entry></feed>
